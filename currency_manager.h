@@ -1,0 +1,5 @@
+#ifndef CURRENCY_MANAGER_H
+#define CURRENCY_MANAGER_H
+
+
+#endif // CURRENCY_MANAGER_H
