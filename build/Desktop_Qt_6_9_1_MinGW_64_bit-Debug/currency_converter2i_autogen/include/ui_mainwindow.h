@@ -62,6 +62,7 @@ public:
         response_text = new QTextEdit(centralwidget);
         response_text->setObjectName("response_text");
         response_text->setGeometry(QRect(20, 130, 221, 41));
+        response_text->setReadOnly(true);
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

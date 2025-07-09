@@ -34,10 +34,15 @@ private slots:
 
     void onNetworkReplyFinished(QNetworkReply *reply);
 
+    void on_source_currency_activated(int index);
+
 private:
     Ui::MainWindow *ui;
     QNetworkAccessManager *networkManager; // Déclarez ceci
     QString apiKey = "525b9c3520a6fdfc47e7d454"; // Déclarez votre clé d'API
     QString jsonFilePath = "currencies.json"; // Chemin vers votre fichier JSON
+    QMap<QString, double> exchangeRates;
+
+    void combo_load_values();
 };
 #endif // MAINWINDOW_H
